@@ -1,1 +1,0 @@
-# AndroidBasics_SingleScreenApp
