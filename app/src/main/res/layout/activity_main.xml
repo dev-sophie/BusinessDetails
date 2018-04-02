@@ -1,35 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_light"
+    android:orientation="vertical"
     tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Sophie Senftleben"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="40sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Developer. Blogger. Teacher."
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-light"
+            android:text="This is a small online business. It's about learning, creating and sharing."
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/web_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/about"
+            android:layout_marginLeft="16dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_globe" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/about"
+            android:layout_toRightOf="@id/web_icon"
+            android:fontFamily="sans-serif-light"
+            android:paddingBottom="7dp"
+            android:paddingTop="8dp"
+            android:text="sophie-senftleben.de"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/mail_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/web_icon"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-light"
+            android:paddingBottom="7dp"
+            android:paddingTop="8dp"
+            android:text="business@sophie-senftleben.de"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/web_icon"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_toLeftOf="@id/mail_text"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_mail" />
+
+        <ImageView
+            android:id="@+id/location_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/mail_text"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_location" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mail_text"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/location_icon"
+            android:fontFamily="sans-serif-light"
+            android:paddingBottom="7dp"
+            android:paddingTop="8dp"
+            android:text="Iserlohn, Germany"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:src="@drawable/androidparty" />
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:padding="16dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo_sophiesenftleben_739x120" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Happy Birthday, Alex!"
-        android:textSize="36sp"
-        android:fontFamily="sans-serif-light"
-        android:textColor="@android:color/white"
-        android:layout_margin="20dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:text="From, Sophie"
-        android:textSize="36sp"
-        android:fontFamily="sans-serif-light"
-        android:textColor="@android:color/white"
-        android:layout_margin="20dp" />
-
-</RelativeLayout>
+</LinearLayout>
