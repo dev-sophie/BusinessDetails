@@ -1,4 +1,4 @@
-package de.sophie_senftleben.happybirthday;
+package de.sophie_senftleben.businessdetails;
 
 import org.junit.Test;
 

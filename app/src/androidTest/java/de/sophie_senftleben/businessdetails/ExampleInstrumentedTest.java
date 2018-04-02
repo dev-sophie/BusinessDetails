@@ -1,4 +1,4 @@
-package de.sophie_senftleben.happybirthday;
+package de.sophie_senftleben.businessdetails;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("de.sophie_senftleben.happybirthday", appContext.getPackageName());
+        assertEquals("de.sophie_senftleben.businessdetails", appContext.getPackageName());
     }
 }
