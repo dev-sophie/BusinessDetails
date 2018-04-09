@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:background="@android:color/holo_orange_light"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:targetApi="16">
 
     <TextView
         android:layout_width="match_parent"
@@ -23,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
         android:fontFamily="sans-serif-light"
-        android:text="Developer. Blogger. Teacher."
+        android:text="@string/logo_subheading"
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textSize="24sp" />
@@ -41,7 +42,7 @@
             android:layout_marginBottom="32dp"
             android:layout_marginTop="16dp"
             android:fontFamily="sans-serif-light"
-            android:text="This is a small online business. It's about learning, creating and sharing."
+            android:text="@string/description"
             android:textAlignment="center"
             android:textSize="18sp" />
 
@@ -62,6 +63,7 @@
             android:fontFamily="sans-serif-light"
             android:paddingBottom="7dp"
             android:paddingTop="8dp"
+            android:autoLink="web"
             android:text="sophie-senftleben.de"
             android:textSize="18sp" />
 
@@ -76,6 +78,7 @@
             android:fontFamily="sans-serif-light"
             android:paddingBottom="7dp"
             android:paddingTop="8dp"
+            android:autoLink="email"
             android:text="business@sophie-senftleben.de"
             android:textSize="18sp" />
 
