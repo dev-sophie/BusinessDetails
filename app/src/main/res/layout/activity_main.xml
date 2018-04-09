@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="16dp"
-        android:text="Sophie Senftleben"
+        android:text="@string/business_name"
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textSize="40sp" />
