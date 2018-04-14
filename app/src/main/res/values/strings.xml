@@ -2,5 +2,5 @@
     <string name="app_name">Business Details</string>
     <string name="business_name">Sophie Senftleben</string>
     <string name="logo_subheading">Developer. Blogger. Teacher.</string>
-    <string name="description">This is a small online business. It's about learning, creating and sharing.</string>
+    <string name="description">This is a small online business. It\'s about learning, creating and sharing.</string>
 </resources>
